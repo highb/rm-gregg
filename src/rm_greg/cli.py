@@ -1,4 +1,4 @@
-"""Command-line interface for rm-greg."""
+"""Command-line interface for rm-gregg."""
 
 from __future__ import annotations
 
@@ -7,9 +7,9 @@ import sys
 
 
 def main(argv: list[str] | None = None) -> int:
-    """Entry point for the rm-greg CLI."""
+    """Entry point for the rm-gregg CLI."""
     parser = argparse.ArgumentParser(
-        prog="rm-greg",
+        prog="rm-gregg",
         description="Gregg Shorthand learning system for reMarkable tablets",
     )
     parser.add_argument("--version", action="version", version="%(prog)s 0.1.0")

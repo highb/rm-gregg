@@ -18,13 +18,13 @@ try:
     from fastapi import FastAPI, HTTPException, UploadFile
 except ImportError as e:
     raise ImportError(
-        "FastAPI is required for the API server. Install with: pip install rm-greg[api]"
+        "FastAPI is required for the API server. Install with: pip install rm-gregg[api]"
     ) from e
 
 from rm_greg.models import NormalizedStroke, NormalizedPoint
 
 app = FastAPI(
-    title="rm-greg",
+    title="rm-gregg",
     description="Gregg Shorthand Practice Feedback API",
     version="0.1.0",
 )

@@ -4,18 +4,18 @@ layout: home
 nav_order: 1
 ---
 
-# rm-greg
+# rm-gregg
 
 **A Gregg Shorthand learning system powered by reMarkable tablet stroke data and ML.**
 
 {: .warning }
 > **This project is under active development.** APIs, data formats, and features are subject to change. Contributions and feedback are welcome, but expect breaking changes.
 
-## What is rm-greg?
+## What is rm-gregg?
 
-rm-greg extracts rich stroke data from [reMarkable tablets](https://remarkable.com/) and uses it to build a curriculum-aware Gregg shorthand practice system with AI-powered feedback.
+rm-gregg extracts rich stroke data from [reMarkable tablets](https://remarkable.com/) and uses it to build a curriculum-aware Gregg shorthand practice system with AI-powered feedback.
 
-Unlike raster-based approaches, rm-greg leverages the tablet's **online stroke data** -- coordinates, pressure, tilt, and speed -- for higher-accuracy recognition and more actionable feedback.
+Unlike raster-based approaches, rm-gregg leverages the tablet's **online stroke data** -- coordinates, pressure, tilt, and speed -- for higher-accuracy recognition and more actionable feedback.
 
 ## Why this project?
 

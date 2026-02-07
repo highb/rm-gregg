@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "rm-greg"
+name = "rm-gregg"
 version = "0.1.0"
 description = "A Gregg Shorthand learning system powered by reMarkable tablet stroke data and ML"
 readme = "README.md"
@@ -47,10 +47,10 @@ dev = [
     "ruff>=0.3",
     "mypy>=1.8",
 ]
-all = ["rm-greg[ml,api,feedback,viz,pdf,dev]"]
+all = ["rm-gregg[ml,api,feedback,viz,pdf,dev]"]
 
 [project.scripts]
-rm-greg = "rm_greg.cli:main"
+rm-gregg = "rm_greg.cli:main"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/rm_greg"]
