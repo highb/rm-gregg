@@ -1,0 +1,74 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "rm-greg"
+version = "0.1.0"
+description = "A Gregg Shorthand learning system powered by reMarkable tablet stroke data and ML"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.11"
+authors = [
+    { name = "Brandon High" },
+]
+
+dependencies = [
+    "rmscene>=0.5.0",
+    "numpy>=1.26",
+    "pydantic>=2.0",
+]
+
+[project.optional-dependencies]
+ml = [
+    "torch>=2.0",
+    "scikit-learn>=1.3",
+    "onnxruntime>=1.16",
+]
+api = [
+    "fastapi>=0.110",
+    "uvicorn[standard]>=0.27",
+]
+feedback = [
+    "dtaidistance>=2.3",
+    "scipy>=1.12",
+    "jinja2>=3.1",
+]
+viz = [
+    "matplotlib>=3.8",
+    "svgwrite>=1.4",
+]
+pdf = [
+    "fpdf2>=2.7",
+]
+dev = [
+    "pytest>=8.0",
+    "pytest-cov>=4.1",
+    "ruff>=0.3",
+    "mypy>=1.8",
+]
+all = ["rm-greg[ml,api,feedback,viz,pdf,dev]"]
+
+[project.scripts]
+rm-greg = "rm_greg.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/rm_greg"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-v --tb=short"
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+src = ["src"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "N", "W", "UP", "B", "SIM", "RUF"]
+
+[tool.mypy]
+python_version = "3.11"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
