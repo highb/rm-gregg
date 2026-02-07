@@ -7,7 +7,7 @@ nav_order: 5
 # Roadmap
 
 {: .note }
-> rm-greg follows an incremental development approach organized into cycles. The project is currently in **Cycle 0/1**, building the data foundation and first classifier.
+> rm-gregg follows an incremental development approach organized into cycles. The project is currently in **Cycle 0/1**, building the data foundation and first classifier.
 
 ## Development Cycles
 

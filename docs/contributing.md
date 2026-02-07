@@ -7,14 +7,14 @@ nav_order: 6
 # Contributing
 
 {: .warning }
-> rm-greg is in early active development. The architecture and APIs are still evolving. Contributions are welcome, but please open an issue to discuss before starting large changes.
+> rm-gregg is in early active development. The architecture and APIs are still evolving. Contributions are welcome, but please open an issue to discuss before starting large changes.
 
 ## Getting Set Up
 
 ```bash
 # Clone the repository
-git clone https://github.com/highb/rm-greg.git
-cd rm-greg
+git clone https://github.com/highb/rm-gregg.git
+cd rm-gregg
 
 # Install all dependencies (including dev tools)
 pip install -e ".[all]"
@@ -71,7 +71,7 @@ Areas where contributions would be most valuable:
 
 ## Reporting Issues
 
-Please open issues on [GitHub](https://github.com/highb/rm-greg/issues) for:
+Please open issues on [GitHub](https://github.com/highb/rm-gregg/issues) for:
 
 - Bug reports
 - Feature requests

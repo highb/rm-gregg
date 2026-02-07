@@ -11,7 +11,7 @@ nav_order: 3
 
 ## Pipeline Overview
 
-rm-greg follows a four-stage pipeline:
+rm-gregg follows a four-stage pipeline:
 
 ```
 ┌─────────────┐    ┌──────────────┐    ┌──────────────┐    ┌─────────────┐

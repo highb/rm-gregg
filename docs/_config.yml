@@ -1,18 +1,18 @@
-title: rm-greg
+title: rm-gregg
 description: A Gregg Shorthand learning system powered by reMarkable tablet stroke data and ML
 remote_theme: just-the-docs/just-the-docs
 
 url: https://highb.github.io
-baseurl: /rm-greg
+baseurl: /rm-gregg
 
 aux_links:
   "GitHub":
-    - "https://github.com/highb/rm-greg"
+    - "https://github.com/highb/rm-gregg"
 
 nav_sort: order
 
 footer_content: >-
-  rm-greg is licensed under the <a href="https://github.com/highb/rm-greg/blob/main/LICENSE">MIT License</a>.
+  rm-gregg is licensed under the <a href="https://github.com/highb/rm-gregg/blob/main/LICENSE">MIT License</a>.
   This project is under active development.
 
 color_scheme: light
