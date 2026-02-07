@@ -16,7 +16,7 @@ nav_order: 2
 
 ## Installation
 
-rm-greg uses a modular dependency system. Install only what you need:
+rm-gregg uses a modular dependency system. Install only what you need:
 
 ```bash
 # Core only (extraction + preprocessing)
@@ -40,7 +40,7 @@ pip install -e ".[all]"
 ### Extract stroke data from a .rm file
 
 ```bash
-rm-greg extract notebook.rm -o strokes.json
+rm-gregg extract notebook.rm -o strokes.json
 ```
 
 This parses the reMarkable binary format and outputs structured stroke data as JSON, including per-point coordinates, pressure, tilt, speed, and direction.
@@ -48,7 +48,7 @@ This parses the reMarkable binary format and outputs structured stroke data as J
 ### Generate synthetic training data
 
 ```bash
-rm-greg synthetic --unit 1 --count 100 -o data/synthetic/
+rm-gregg synthetic --unit 1 --count 100 -o data/synthetic/
 ```
 
 Generates parameterized Gregg shorthand primitives (circles, lines, curves) with realistic variation for training without a tablet.
@@ -56,7 +56,7 @@ Generates parameterized Gregg shorthand primitives (circles, lines, curves) with
 ### Train a stroke classifier
 
 ```bash
-rm-greg train data/synthetic/ --unit 1 --model rf -o models/unit1.pkl
+rm-gregg train data/synthetic/ --unit 1 --model rf -o models/unit1.pkl
 ```
 
 Trains a Random Forest or SVM classifier on extracted features from stroke data.
@@ -64,7 +64,7 @@ Trains a Random Forest or SVM classifier on extracted features from stroke data.
 ### Start the API server
 
 ```bash
-rm-greg serve --port 8000
+rm-gregg serve --port 8000
 ```
 
 Launches a FastAPI server for stroke classification and feedback.

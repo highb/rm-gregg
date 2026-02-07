@@ -48,7 +48,7 @@ class StrokeClassifier:
         except ImportError as e:
             raise ImportError(
                 "scikit-learn is required for classical ML models. "
-                "Install with: pip install rm-greg[ml]"
+                "Install with: pip install rm-gregg[ml]"
             ) from e
 
         self.label_encoder = LabelEncoder()

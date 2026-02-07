@@ -1,4 +1,4 @@
-"""Core data models for rm-greg.
+"""Core data models for rm-gregg.
 
 Defines the Pydantic models used throughout the pipeline for representing
 stroke data, points, and practice sessions.

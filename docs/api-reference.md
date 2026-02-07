@@ -11,7 +11,7 @@ nav_order: 4
 
 ## Overview
 
-rm-greg exposes a REST API via FastAPI for stroke classification, feedback generation, and file management.
+rm-gregg exposes a REST API via FastAPI for stroke classification, feedback generation, and file management.
 
 **Base URL**: `http://localhost:8000`
 

@@ -1,1 +1,1 @@
-"""FastAPI application for the rm-greg API server."""
+"""FastAPI application for the rm-gregg API server."""
